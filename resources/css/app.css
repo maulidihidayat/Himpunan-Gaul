@@ -1,0 +1,26 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+
+
+
+/* Kalau pakai font Inter */
+body {
+  font-family: 'Inter', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+  ::selection {
+    background: #ffbbf0;
+    color: #1d2c2a;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: none;
+}
