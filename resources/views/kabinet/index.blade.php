@@ -2,27 +2,27 @@
 @section('title', 'Kabinet Zeta')
 
 @section('content')
-    <section class="container mx-auto px-36">
+    <section class="container px-10 mx-auto">
         <section class="container px-6 py-20 mx-auto">
             <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
                 {{-- Gambar ilustrasi --}}
                 <div>
                     <img src="{{ asset('images/anggota/Wakil.JPG') }}" alt="Ilustrasi Kabinet Zeta"
-                        class="object-cover w-full max-w-md mx-auto  max-h-[300px] md:mx-0 rounded-3xl border-3 border-[#18181B] ">
+                        class="object-cover w-full max-w-xl  mx-auto  max-h-[350px] md:mx-0 rounded-3xl border-3 border-[#18181B] ">
                 </div>
 
                 {{-- Deskripsi Kabinet --}}
                 <div>
                     <h2 class="text-[40px] font-black text-[#18181B] mb-4">Kabinet <span class="text-orange-500">Zeta</span>
                     </h2>
-                    <p class="text-[18px] text-[#52525B] leading-relaxed mb-6 font-medium">
+                    <p class="text-[18px] text-[#52525B] leading-relaxed mb-6 font-medium text-justify">
                         Kabinet <strong>Zeta</strong> hadir sebagai simbol tekad baru HMPS Pendidikan Informatika dalam
                         menumbuhkan budaya yang <span class="font-semibold text-orange-500">inovatif</span>,
                         <span class="font-semibold text-orange-500">kolaboratif</span>, dan <span
                             class="font-semibold text-orange-500">berdampak nyata</span>.
                         Kami tidak hanya mengelola organisasi, tapi merancang gerakan.
                     </p>
-                    <p class="text-[18px] text-[#52525B] leading-relaxed">
+                    <p class="text-[18px] text-[#52525B] leading-relaxed text-justify font-medium">
                         Dengan semangat Zeta sebagai akhir dan puncak dari sebuah siklus, kami berkomitmen menjadikan HMPS
                         PI
                         sebagai wadah terbaik pengembangan diri dan kontribusi mahasiswa di segala lini.
@@ -35,7 +35,7 @@
                 {{-- Inovasi --}}
                 <div
                     class="bg-white border-3 border-[#18181B]  rounded-3xl shadow hover:shadow-md p-6 transition-all duration-300 hover:border-b-7  hover:bg-red-50">
-                    <h3 class="text-2xl font-semibold text-[#18181B] mb-3">🧠 Inovasi</h3>
+                    <h3 class="text-2xl font-bold text-[#18181B] mb-3">🧠 Inovasi</h3>
                     <p class="text-[#52525B] text-[16px] leading-relaxed">
                         Mendorong kreativitas dan solusi digital melalui program pelatihan, riset teknologi, dan
                         pengembangan aplikasi sederhana oleh mahasiswa.
@@ -45,7 +45,7 @@
                 {{-- Kontribusi --}}
                 <div
                     class="bg-white border-3 border-[#18181B]  rounded-3xl shadow hover:shadow-md p-6 transition-all duration-300 hover:border-b-7  hover:bg-red-50">
-                    <h3 class="text-2xl font-semibold text-[#18181B] mb-3">🤝 Kontribusi</h3>
+                    <h3 class="text-2xl font-bold text-[#18181B] mb-3">🤝 Kontribusi</h3>
                     <p class="text-[#52525B] text-[16px] leading-relaxed">
                         Hadir dalam pengabdian kampus dan masyarakat melalui kegiatan sosial, edukasi digital, dan
                         kolaborasi lintas prodi dan organisasi.
@@ -55,7 +55,7 @@
                 {{-- Prestasi --}}
                 <div
                     class="bg-white border-3 border-[#18181B]  rounded-3xl shadow hover:shadow-md p-6 transition-all duration-300 hover:border-b-7  hover:bg-orange-50">
-                    <h3 class="text-2xl font-semibold text-[#18181B] mb-3">🏆 Prestasi</h3>
+                    <h3 class="text-2xl font-bold text-[#18181B] mb-3">🏆 Prestasi</h3>
                     <p class="text-[#52525B] text-[16px] leading-relaxed">
                         Membangun kultur unggul dengan mendorong mahasiswa aktif mengikuti lomba, seminar, dan kompetisi di
                         bidang teknologi & kepemimpinan.
@@ -73,7 +73,8 @@
 
                 {{-- Deskripsi Utama --}}
                 <div>
-                    <h2 class="text-4xl font-extrabold text-[#18181B] mb-4">Makna Logo <span class="text-orange-500">Kabinet Zeta</span></h2>
+                    <h2 class="text-4xl font-extrabold text-[#18181B] mb-4">Makna Logo <span class="text-orange-500">Kabinet
+                            Zeta</span></h2>
                     <p class="text-[#52525B] leading-relaxed text-[17px] mb-6">
                         Logo <strong>Kabinet ZETA</strong> menggambarkan integrasi antara pendidikan dan teknologi.
                         Buku terbuka melambangkan semangat belajar dan keterbukaan terhadap ilmu,
@@ -120,30 +121,36 @@
         </section>
 
         <section class="container px-4 py-12 mx-auto">
-    <h2 class="text-[40px] font-black text-[#18181B] mb-6">Logo Divisi <span class="text-orange-500">Kabinet ZETA</span></h2>
+            <h2 class="text-[40px] font-black text-[#18181B] mb-6">Logo Divisi <span class="text-orange-500">Kabinet
+                    ZETA</span></h2>
 
-    <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-        {{-- SDM dan HUMAS --}}
-        <div class="bg-white border-3 border-[#18181B] rounded-3xl p-6 shadow">
-            <img src="{{ asset('images/logo-divisi/sdm-humas.jpg') }}" alt="Logo SDM dan HUMAS" class="w-full mb-4 rounded-xl">
-            <h3 class="text-xl font-bold text-[#18181B] mb-2">Divisi SDM & HUMAS</h3>
-            <p class="text-[#52525B] text-justify font-medium">
-                Logo SDM dan HUMAS melambangkan kekuatan komunikasi dan pengembangan sumber daya manusia.
-                Dua siluet wajah dalam buku terbuka menggambarkan keterbukaan dalam berdiskusi dan membina hubungan, sedangkan
-                simbol percakapan (speech bubble) pada HUMAS menguatkan makna interaksi dan penyampaian informasi.
-            </p>
-        </div>
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+                {{-- SDM dan HUMAS --}}
+                <div class="bg-white border-3 border-[#18181B] rounded-3xl p-6 shadow">
+                    <img src="{{ asset('images/logo-divisi/sdm-humas.jpg') }}" alt="Logo SDM dan HUMAS"
+                        class="w-full mb-4 rounded-xl">
+                    <h3 class="text-xl font-bold text-[#18181B] mb-2">Divisi SDM & HUMAS</h3>
+                    <p class="text-[#52525B] text-justify font-medium">
+                        Logo SDM dan HUMAS melambangkan kekuatan komunikasi dan pengembangan sumber daya manusia.
+                        Dua siluet wajah dalam buku terbuka menggambarkan keterbukaan dalam berdiskusi dan membina hubungan,
+                        sedangkan
+                        simbol percakapan (speech bubble) pada HUMAS menguatkan makna interaksi dan penyampaian informasi.
+                    </p>
+                </div>
 
-        {{-- MINKAT dan TI --}}
-        <div class="bg-white border-3 border-[#18181B] rounded-3xl p-6 shadow">
-            <img src="{{ asset('images/logo-divisi/minkat-ti.jpg') }}" alt="Logo MINKAT dan TI" class="w-full mb-4 rounded-xl">
-            <h3 class="text-xl font-bold text-[#18181B] mb-2">Divisi MINKAT & TI</h3>
-            <p class="text-[#52525B] text-justify">
-                Logo MINKAT dan TI mencerminkan semangat, kreativitas, dan kecerdasan digital. Simbol bintang pada MINKAT menggambarkan pencapaian dan prestasi mahasiswa. Sedangkan simbol microchip pada TI menekankan inovasi teknologi dan kompetensi digital sebagai inti dari pengembangan divisi ini.
-            </p>
-        </div>
-    </div>
-</section>
+                {{-- MINKAT dan TI --}}
+                <div class="bg-white border-3 border-[#18181B] rounded-3xl p-6 shadow">
+                    <img src="{{ asset('images/logo-divisi/minkat-ti.jpg') }}" alt="Logo MINKAT dan TI"
+                        class="w-full mb-4 rounded-xl">
+                    <h3 class="text-xl font-bold text-[#18181B] mb-2">Divisi MINKAT & TI</h3>
+                    <p class="text-[#52525B] text-justify">
+                        Logo MINKAT dan TI mencerminkan semangat, kreativitas, dan kecerdasan digital. Simbol bintang pada
+                        MINKAT menggambarkan pencapaian dan prestasi mahasiswa. Sedangkan simbol microchip pada TI
+                        menekankan inovasi teknologi dan kompetensi digital sebagai inti dari pengembangan divisi ini.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
 

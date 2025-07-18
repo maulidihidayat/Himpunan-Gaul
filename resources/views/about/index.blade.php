@@ -3,11 +3,12 @@
 @section('title', 'Tentang Kami')
 
 @section('content')
-    <section class="container px-4 py-2 mx-auto mt-4">
+    <section id="about" class="container px-10 py-2 mx-auto mt-4">
         <h1 class="mb-10 text-[40px] font-black text-left text-[#18181B] ">Tentang Kami</h1>
         <div class="flex items-center justify-around">
             <div class="max-w-2xl">
-                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Halo, Nabil di sini. Sedikit cerita tentang awal mula SOM
+                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Halo, Nabil di sini. Sedikit cerita
+                    tentang awal mula SOM
                     AI
                     dibuat, di awal 2023, gue dan temen-temen di kampus lagi masa-masanya skripsian dan kita semua ngejar
                     lulus
@@ -16,7 +17,8 @@
                     pengumpulan data penelitian, proses bimbingan sama dosen, ritual seminar, sidang, dan seluruh rangkaian
                     prosesnya punya tantangannya tersendiri.</p>
                 <strong class="pt-4 pb-2">1. Tantangan Skripsian</strong>
-                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Ada 1 atau 2 orang key person yang menurut kita, sebagai
+                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Ada 1 atau 2 orang key person yang menurut
+                    kita, sebagai
                     mahasiswa, sangat krusial dalam proses penulisan skripsi: dosen pembimbing. Beliau punya kuasa penuh
                     atas
                     skripsi kita, apakah bisa diteruskan ke proses selanjutnya atau enggak. Di tengah seluruh kesibukan
@@ -25,7 +27,8 @@
                     tentang
                     skripsi kita biar kita gak kehilangan arah, iya kan?</p>
                 <strong class="pt-4 pb-2">2. SOM AI Lahir</strong>
-                <p class="leading-relaxed text-[18px] text-[#52525B] font-medium">Tentang SOM AI Halo, Nabil di sini. Sedikit cerita tentang
+                <p class="leading-relaxed text-[18px] text-[#52525B] font-medium">Tentang SOM AI Halo, Nabil di sini. Sedikit
+                    cerita tentang
                     awal
                     mula SOM AI dibuat, di awal 2023, gue dan temen-temen di kampus lagi masa-masanya skripsian dan kita
                     semua
@@ -50,14 +53,16 @@
                     🤗.
                 </p>
                 <strong class="pt-4 pb-2">3. Viral di TikTok</strong>
-                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Karena temen-temen gue di kampus masih belum aware dengan
+                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Karena temen-temen gue di kampus masih
+                    belum aware dengan
                     kecanggihan SOM AI ini, gue mencoba untuk bikin konten tentang SOM AI di Instagram Reels dan TikTok.
                     Dari
                     sinilah keviralan SOM AI dimulai. Konten gue tentang SOM AI di TikTok masuk FYP dan jadi banyak banget
                     yang
                     akses SOM AI, meskipun waktu itu masih pakai domain nabilrei.my.is/somai . </p>
                 <strong class="pt-4 pb-2">4. Antusias Semakin Luas</strong>
-                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Seiring berjalannya waktu, banyak content creator di
+                <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Seiring berjalannya waktu, banyak content
+                    creator di
                     TikTok
                     dan Instagram yang membantu mempromosikan SOM AI yang pada akhirnya membuat SOM AI semakin dikenal
                     mahasiswa
@@ -106,7 +111,7 @@
                         </div>
                         <div>
                             <img sr src="{{ asset('images/anggota/Wakil.JPG') }}" alt="Profile Picture"
-                                class="w-[150px] h-[150px] object-cover rounded-4xl" loading="lazy" decoding="async">
+                                class="w-[150px] h-[150px] object-cover rounded-4xl" loading="lazy" decoding="async" width="2000px" height="1000px">
                         </div>
                     </div>
                     {{-- SDM Card --}}

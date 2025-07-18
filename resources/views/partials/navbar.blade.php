@@ -1,4 +1,4 @@
-<nav id="navbar" class="sticky top-0 z-10 bg-white shadow-none">
+<nav id="navbar" class="sticky top-0 z-20 px-16 bg-white shadow-none">
     <div class="container flex items-center justify-between px-4 py-3 mx-auto">
         {{-- Kiri: Logo --}}
         <a href="{{ url('/') }}" class="flex items-center space-x-4">
@@ -45,7 +45,8 @@
                             class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Galeri HMPS
                             PI</a>
                         <a href="{{ route('registrasi.store') }}"
-                            class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Rekrutmen</a>
+                            class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Rekrutmen
+                            Anggota</a>
                         <a href="{{ route('kontak.index') }}"
                             class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Kontak
                             Kami</a>
@@ -71,7 +72,7 @@
                             class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Artikel</a>
                         <a href="{{ route('pencapaian.index') }}"
                             class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Pencapaian</a>
-                        <a href="{{ route('pencapaian.index') }}"
+                        <a href="{{ route('beasiswa.index') }}"
                             class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Beasiswa</a>
                     </div>
                 </div>
@@ -99,7 +100,7 @@
                 </a>
             @else
                 <a href="{{ route('filament.admin.auth.login') }}"
-                    class="font-bold text-[16px] bg-orange-600 text-white px-7 py-4 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
+                    class="font-bold text-[16px] bg-[#F75801] text-white px-8 py-4 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
                     Masuk
                 </a>
             @endauth

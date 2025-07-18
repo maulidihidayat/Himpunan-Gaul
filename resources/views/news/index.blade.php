@@ -3,7 +3,7 @@
 @section('title', 'Daftar Berita')
 
 @section('content')
-    <div class="container px-4 mx-auto mt-10 sm:px-6 lg:px-8">
+    <div class="container px-10 mx-auto mt-10 sm:px-6 lg:px-8">
         <h1 class="text-[36px] sm:text-[40px] font-black text-[#18181B] mb-8">Berita</h1>
 
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-4">

@@ -17,10 +17,10 @@
                     Berinovasi, Berkontribusi, dan Berprestasi untuk menciptakan himpunan yang aktif, produktif, dan inspiratif.
                 </p>
                 <div class="flex pt-2 space-x-4">
-                    <a href="https://instagram.com/" class="text-orange-600 hover:text-orange-400" target="_blank"><i class="text-xl fab fa-instagram"></i></a>
-                    <a href="https://facebook.com/" class="text-orange-600 hover:text-orange-400" target="_blank"><i class="text-xl fab fa-facebook"></i></a>
-                    <a href="#" class="text-orange-600 hover:text-orange-400" target="_blank"><i class="text-xl fab fa-tiktok"></i></a>
-                    <a href="#" class="text-orange-600 hover:text-orange-400" target="_blank"><i class="text-xl fab fa-youtube"></i></a>
+                    <a href="https://instagram.com/" class="text-orange-600 hover:text-white hover:scale-110 hover:rotate-3" target="_blank"><i class="text-xl fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/" class="text-orange-600 hover:text-white hover:scale-110 hover:rotate-3" target="_blank"><i class="text-xl fab fa-facebook"></i></a>
+                    <a href="#" class="text-orange-600 hover:text-white hover:scale-110 hover:rotate-3" target="_blank"><i class="text-xl fab fa-tiktok"></i></a>
+                    <a href="#" class="text-orange-600 hover:text-white hover:scale-110 hover:rotate-3" target="_blank"><i class="text-xl fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -28,11 +28,11 @@
             <div>
                 <h3 class="mb-4 text-lg font-semibold text-[#18181B] dark:text-white">Navigasi Cepat</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="{{ route('artikel.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300">Artikel</a></li>
-                    <li><a href="{{ route('news.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300">Berita</a></li>
-                    <li><a href="{{ route('gallery.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300">Galeri</a></li>
-                    <li><a href="{{ route('pencapaian.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300">Pencapaian</a></li>
-                    <li><a href="{{ route('kepengurusan.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300">Struktur Pengurus</a></li>
+                    <li><a href="{{ route('artikel.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300 ">Artikel</a></li>
+                    <li><a href="{{ route('news.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300 ">Berita</a></li>
+                    <li><a href="{{ route('gallery.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300 ">Galeri</a></li>
+                    <li><a href="{{ route('pencapaian.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300 ">Pencapaian</a></li>
+                    <li><a href="{{ route('kepengurusan.index') }}" class="text-orange-600 hover:underline dark:text-neutral-300 ">Struktur Pengurus</a></li>
                     <li><a href="#faq" class="text-orange-600 hover:underline dark:text-neutral-300">FAQ</a></li>
                 </ul>
             </div>

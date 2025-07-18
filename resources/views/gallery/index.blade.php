@@ -7,7 +7,7 @@
     {{-- <script src="//unpkg.com/alpinejs" defer></script> --}}
 
     <div class="container px-4 py-8 mx-auto">
-        <h1 class="text-4xl font-black mb-10 text-center text-[#18181B]">Galeri Foto</h1>
+        <h1 class="text-4xl font-black mb-10 text-left text-[#18181B]">Galeri <span class="text-orange-500">Foto</span></h1>
 
         @if ($galeri->count())
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">

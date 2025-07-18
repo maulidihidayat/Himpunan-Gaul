@@ -66,7 +66,6 @@ class ArtikelResource extends Resource
                         ->directory('artikel-images')
                         ->imagePreviewHeight('150')
                         ->maxSize(2048),
-
                     Hidden::make('created_by')
                         ->default(auth()->id()),
                     TextInput::make('slug')

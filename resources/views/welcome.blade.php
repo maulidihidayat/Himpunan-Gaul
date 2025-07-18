@@ -4,26 +4,36 @@
 
 @section('content')
     {{-- Main --}}
-    <div class="flex items-center justify-around min-h-screen mx-auto -mt-10">
-        <div class="space-x-2 text-left">
-            <h1 class="text-6xl font-bold text-[#18181B] max-w-2xl">HMPS Pendidikan Informatika <span
-                    class="text-orange-500">Universitas Hamzanwadi</span></h1>
-            <img src="images/gif.gif" alt="gif" class="absolute -mt-40 left-12 w-80 h-80">
+    <div class="relative flex items-center justify-around min-h-screen mx-auto -mt-10">
+        <!-- Konten Teks dan Tombol -->
+        <div class="relative z-10 space-x-2 text-left">
+            <h1 class="text-6xl font-bold text-[#18181B] max-w-2xl">
+                HMPS Pendidikan Informatika <span class="text-orange-500">Universitas Hamzanwadi</span>
+            </h1>
+
+            <!-- GIF -->
+            <img src="images/gif.gif" alt="gif" class="absolute z-0 -mt-40 pointer-events-none left-12 w-80 h-80">
+
             <p class="mt-6 text-lg">Yuk cari tau lebih dalam tentang kami</p>
+
+            <!-- Tombol -->
             <div class="mt-10 space-x-2">
                 <a href="{{ route('filament.admin.auth.login') }}"
-                    class="mt-10 font-bold text-[16px] bg-orange-600 text-white px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition text-white">
+                    class="font-bold text-[16px] bg-[#F75801] text-white px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
                     Masuk
                 </a>
-                <a href="{{ url('#') }}"
-                    class="mt-4 font-bold text-[16px] bg-white text-[#18181B] px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
-                    selengkapnya
+                <a href="#hallo"
+                    class="font-bold text-[16px] bg-white text-[#18181B] px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
+                    Selengkapnya
                 </a>
             </div>
         </div>
+
+        <!-- Logo -->
         <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo" class="object-contain w-[300px] -mt-10"
             width="1000" height="1000">
     </div>
+
 
     </div>
 
@@ -44,7 +54,7 @@
                     height="1000" />
             </div>
         </div>
-    </div>    
+    </div>
     @include('partials.hallo')
     {{-- Faq --}}
     @php
@@ -106,7 +116,7 @@
         ];
     @endphp
     @include('partials.faq', ['items' => $items])
-    @include('partials.marquee')
+    {{-- @include('partials.marquee') --}}
     @include('partials.yotube')
     @include('partials.tiktok')
 

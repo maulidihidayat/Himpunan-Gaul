@@ -5,9 +5,8 @@
 
 
 @section('content')
-    <div class="container px-4 py-10 mx-auto mt-4">
-        <h1 class="mb-10 text-[40px] font-black text-left text-[#18181B]">Artikel</h1>
-
+    <div class="container px-10 py-10 mx-auto mt-4">
+        <h1 class="mb-4 text-[40px] font-black text-left text-[#18181B]">Artikel</h1>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
             {{-- Kolom Kiri: Artikel Utama --}}
             <div class="space-y-8 md:col-span-3">

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController;
 // use App\Http\Controllers\Frontend\RegistrasiController;
 use App\Http\Controllers\RegistrasiController;
+use App\Http\Controllers\BeasiswaController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,7 +24,7 @@ Route::get('/artikel', function () {
 Route::get('/artikel/{slug}', function ($slug) {
     $artikel = Artikel::where('slug', $slug)->firstOrFail();
     return view('artikel.show', compact('artikel'));
-})->name('artikel.show') ;
+})->name('artikel.show');
 
 
 Route::get('/artikel', function () {
@@ -93,25 +95,29 @@ Route::get('/Events', function () {
 })->name('Events.index');
 
 // Tentang Kami
-Route::get('/about',function() {
+Route::get('/about', function () {
     return view('about.index');
 })->name('about.index');
 
 //Kontak Kami
-Route::get('/kontak',function() {
+Route::get('/kontak', function () {
     return view('kontak.index');
 })->name('kontak.index');
 
 // Visi misi
-Route::get('/visi-misi', function(){
+Route::get('/visi-misi', function () {
     return view('visi-misi.index');
 })->name('visi-misi.index');
 
 //Kabinet Zeta
-Route::get('/kabinet', function(){
+Route::get('/kabinet', function () {
     return view('kabinet.index');
 })->name('kabinet.index');
 
+// Beasiswa
+
+Route::get('/beasiswa', [BeasiswaController::class, 'index'])->name('beasiswa.index');
+Route::get('/beasiswa/{slug}', [BeasiswaController::class, 'show'])->name('beasiswa.show');
 
 Route::post('/registrasi', [RegistrasiController::class, 'store'])->name('registrasi.store');
 

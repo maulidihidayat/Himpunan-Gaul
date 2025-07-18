@@ -3,12 +3,12 @@
 @section('title', $artikel->title)
 
 @section('content')
-    <div class="container max-w-2xl py-6 mx-auto">
+    <div class="container max-w-2xl py-8 mx-auto">
         <h1 class="mb-2 text-[40px] font-black text-center">{{ $artikel->title }}</h1>
         <p class="mb-4 text-[18px] font-medium text-[#52525B] text-center ">
             <i aria-hidden="true" class="far fa-calendar"></i>
-            {{ $artikel->publish_date->format('d M Y') }} 
-         {{-- -oleh$artikel->creator->name??'Admin' --}} 
+            {{ $artikel->publish_date->format('d M Y') }}
+            {{-- -oleh$artikel->creator->name??'Admin' --}}
         </p>
 
         @if ($artikel->image)
@@ -16,31 +16,47 @@
                 class="w-full mb-auto rounded-xl h-[400px] object-cover">
         @endif
 
-        <div class="mt-4 text-[#52525B] text-[18px] leading-relaxed font-medium mt-4 prose prose-slate max-w-none [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:ml-2 [&_li]:mb-2 [&_li]:text-[18px] [&_h1]:text-[24px] [&_h2]:text-[22px] [&_h3]:text-[20px]">
-                {!! $artikel->content !!}
-            </div>
-            
-            <div class="items-center mx-auto mt-6 space-x-2">
-            <a href="https://facebook.com/" target="_blank" 
-            class="p-2 text-white transition bg-orange-500 rounded-full hover:rotate-6 hover:scale-110">
-                <i class="fab fa-facebook"></i>
+        <div
+            class="mt-4 text-[#52525B] text-[18px] leading-relaxed text-justify font-medium mt-4 prose prose-slate max-w-none [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:ml-2 [&_li]:mb-2 [&_li]:text-[18px] [&_h1]:text-[24px] [&_h2]:text-[22px] [&_h3]:text-[20px]">
+            {!! $artikel->content !!}
+        </div>
+
+        <div class="flex mt-6 space-x-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"
+                class="flex items-center justify-center w-10 h-10 text-white transition duration-300 rounded-full bg-[#F75801] hover:scale-110 hover:rotate-3">
+                <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://facebook.com/" target="_blank"
-            class="p-2 text-white transition bg-orange-500 rounded-full hover:rotate-6 hover:scale-110">
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"
+                class="flex items-center justify-center w-10 h-10 text-white transition duration-300 rounded-full bg-[#F75801] hover:scale-110 hover:rotate-3">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://facebook.com/" target="_blank"
-            class="p-2 text-white transition bg-orange-500 rounded-full hover:rotate-6 hover:scale-110">
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"
+                class="flex items-center justify-center w-10 h-10 text-white transition duration-300 bg-[#F75801] rounded-full hover:scale-110 hover:rotate-3">
                 <i class="fab fa-tiktok"></i>
             </a>
-            <a href="https://facebook.com/" target="_blank"
-            class="p-2 text-white transition bg-orange-500 rounded-full hover:rotate-6 hover:scale-110">
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/" target="_blank" aria-label="YouTube"
+                class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-[#F75801] hover:scale-110 hover:rotate-3 transition duration-300">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>
-        
-            <a href=" {{ route('artikel.index') }}" class="inline-block mt-6 text-orange-600 hover:underline">← Kembali ke
-            daftar
-            artikel</a>
-        </div>
+
+        <a href="{{ route('artikel.index') }}"
+            class="inline-flex items-center mt-6 text-base font-semibold text-orange-600 transition-all duration-300 hover:text-[#18181B] group">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 mr-2 transition-transform duration-300 group-hover:-translate-x-1" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span>Kembali</span>
+        </a>
+
+
+    </div>
 @endsection

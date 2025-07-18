@@ -22,7 +22,7 @@ class FeedbackController extends Controller
             'send_at' => now(),
         ]);
 
-        return redirect()->back()->with('success', 'Terima kasih atas feedback Anda!');
+        return redirect()->back()->with('success', 'Terima kasih atas feedback Kamu!');
     }
 }
 

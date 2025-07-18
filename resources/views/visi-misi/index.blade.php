@@ -2,7 +2,7 @@
 @section('title', 'Visi Misi')
 
 @section('content')
-    <section class="container h-screen mx-auto mt-10 px-63">
+    <section class="container h-screen px-10 mx-auto mt-10">
         <div class="flex ">
             <div class="max-w-3xl">
                 <h1 class="text-[#18181B] text-[40px] font-black">Visi <span class="text-orange-500">Misi</span> </h1>
@@ -13,13 +13,16 @@
                     <br><br>
                     Misi kami adalah:
                 <ul class="mt-2 text-[#52525B] list-disc list-inside font-meduim text-[18px]">
-                    <li>Mendorong semangat <strong class="bg-[#ffbbf0] p-1">berinovasi</strong> dalam bidang teknologi dan pendidikan informatika
+                    <li>Mendorong semangat <strong class="bg-[#ffbbf0] p-1">berinovasi</strong> dalam bidang teknologi dan
+                        pendidikan informatika
                         melalui
                         program kerja yang kreatif dan solutif.</li>
-                    <li>Aktif <strong class="bg-[#ffbbf0] p-1">berkontribusi</strong> dalam kegiatan kemahasiswaan, sosial, dan pengembangan
+                    <li>Aktif <strong class="bg-[#ffbbf0] p-1">berkontribusi</strong> dalam kegiatan kemahasiswaan, sosial,
+                        dan pengembangan
                         masyarakat
                         kampus dengan semangat kolaboratif.</li>
-                    <li>Menumbuhkan budaya <strong class="bg-[#ffbbf0] p-1">berprestasi</strong> melalui kompetisi, pelatihan, dan kegiatan yang
+                    <li>Menumbuhkan budaya <strong class="bg-[#ffbbf0] p-1">berprestasi</strong> melalui kompetisi,
+                        pelatihan, dan kegiatan yang
                         menunjang kualitas akademik dan karakter anggota.</li>
                 </ul>
                 </p>
@@ -31,7 +34,8 @@
         </div>
     </section>
     <section class="container px-6 mx-auto mt-4 mb-20 space-y-16">
-        <h2 class="text-[40px] font-black text-[#18181B] mb-12 text-center">Implementasi <span class="text-orange-500">Visi & Misi</span> </h2>
+        <h2 class="text-[40px] font-black text-[#18181B] mb-12 text-center">Implementasi <span class="text-orange-500">Visi
+                & Misi</span> </h2>
 
         <!-- Berinovasi -->
         <div class="flex flex-col items-center gap-8 md:flex-row ">

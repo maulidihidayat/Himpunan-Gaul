@@ -21,6 +21,6 @@ class RegistrasiController extends Controller
 
         Registrasi::create($validated);
 
-        return redirect()->back()->with('success', 'Terima kasih atas feedback Anda!');
+        return redirect()->back()->with('success', 'Terima kasih data kamu akan di proses oleh admin!');
     }
 }
