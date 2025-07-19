@@ -12,7 +12,7 @@
             </h1>
 
             <!-- GIF -->
-            <img src="images/gif.gif" alt="gif" class="absolute z-0 -mt-40 pointer-events-none left-12 w-80 h-80">
+            <img src="images/gif.gif" alt="gif" class="absolute left-0 z-0 -mt-40 pointer-events-none w-80 h-80">
 
             <p class="mt-6 text-lg">Yuk cari tau lebih dalam tentang kami</p>
 
@@ -115,6 +115,131 @@
             ],
         ];
     @endphp
+    <section class="container px-10 py-10 mx-auto mt-96 md:-mt-2">
+        <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
+            Highlight <span class="text-orange-500">Pencapaian</span>
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            @foreach ($highlightPencapaians as $pencapaian)
+                <a href="{{ route('pencapaian.show', $pencapaian->slug) }}"
+                    class="overflow-hidden transition-all duration-300 bg-white border-[#18181B] border-3 rounded-3xl hover:shadow-lg group-2 p-4 hover:bg-orange-50 max-w-md hover:shadow-md hover:border-b-7 hover:-translate-y-1">
+                    <img src="{{ asset('storage/' . $pencapaian->image) }}" alt="Thumbnail"
+                        class="object-cover w-full h-40 mb-2 rounded-xl" />
+
+                    <h3 class="text-lg font-bold text-[#18181B]">
+                        {{ $pencapaian->title }}
+                    </h3>
+
+                    <p class="mt-2 text-sm text-[#52525B]">
+                        <i class="mr-1 far fa-calendar"></i>
+                        {{ $pencapaian->publish_date->format('d M Y') }}
+                    </p>
+                </a>
+            @endforeach
+        </div>
+
+        <div class="mt-6 text-right">
+            <a href="{{ route('pencapaian.index') }}" class="font-medium text-orange-500 hover:underline">
+                Lihat semua artikel →
+            </a>
+        </div>
+    </section>
+    {{-- Pencapaian --}}
+    <section class="container px-10 py-10 mx-auto">
+        <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
+            Highlight <span class="text-orange-500">Artikel</span>
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            @foreach ($highlightArtikels as $artikel)
+                <a href="{{ route('artikel.show', $artikel->slug) }}"
+                    class="overflow-hidden transition-all duration-300 bg-white border-[#18181B] border-3 rounded-3xl hover:shadow-lg group-2 p-4 hover:bg-orange-50 max-w-md hover:shadow-md hover:border-b-7 hover:-translate-y-1">
+                    <img src="{{ asset('storage/' . $artikel->image) }}" alt="Thumbnail"
+                        class="object-cover w-full h-40 mb-2 rounded-xl" />
+
+                    <h3 class="text-lg font-bold text-[#18181B]">
+                        {{ $artikel->title }}
+                    </h3>
+
+                    <p class="mt-2 text-sm text-[#52525B]">
+                        <i class="mr-1 far fa-calendar"></i>
+                        {{ $artikel->publish_date->format('d M Y') }}
+                    </p>
+                </a>
+            @endforeach
+        </div>
+
+        <div class="mt-6 text-right">
+            <a href="{{ route('artikel.index') }}" class="font-medium text-orange-500 hover:underline">
+                Lihat semua artikel →
+            </a>
+        </div>
+    </section>
+
+
+    {{-- Beasiswa start --}}
+    <section class="container px-10 py-10 mx-auto">
+        <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
+            Highlight Info<span class="text-orange-500">Beasiswa</span>
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            @foreach ($highlightBeasiswas as $beasiswa)
+                <a href="{{ route('beasiswa.show', $beasiswa->slug) }}"
+                    class="overflow-hidden transition-all duration-300 bg-white border-[#18181B] border-3 rounded-3xl hover:shadow-lg group-2 p-4 hover:bg-orange-50 max-w-md hover:shadow-md hover:border-b-7 hover:-translate-y-1">
+                    <img src="{{ asset('storage/' . $beasiswa->image) }}" alt="Thumbnail"
+                        class="object-cover w-full h-40 mb-2 rounded-xl" />
+
+                    <h3 class="text-lg font-bold text-[#18181B]">
+                        {{ $beasiswa->title }}
+                    </h3>
+
+                    <p class="mt-2 text-sm text-[#52525B]">
+                        <i class="mr-1 far fa-calendar"></i>
+                        {{ $beasiswa->publish_date->format('d M Y') }}
+                    </p>
+                </a>
+            @endforeach
+        </div>
+
+        <div class="mt-6 text-right">
+            <a href="{{ route('beasiswa.index') }}" class="font-medium text-orange-500 hover:underline">
+                Lihat semua beasiswa →
+            </a>
+        </div>
+    </section>
+
+    {{-- Saran & Komenter Start --}}
+    <section class="container h-screen px-10 py-10 mx-auto mt-32">
+        <h2 class="mb-10 text-[40px] font-black text-[#18181B] text-center">
+            Feedback dan pesan dari sahabat <span class="text-orange-500">Informatics!</span>
+        </h2>
+
+        @if ($recentFeedbacks->count())
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                @foreach ($recentFeedbacks as $feedback)
+                    <div class="transition bg-red-50 border-3 border-[#18181B] rounded-3xl hover:shadow-md">
+                        <p class="text-[18px] font-medium text-[#52525B] line-clamp-4 mb-8 p-6 ">
+                            "{{ $feedback->message }}"
+                        </p>
+                        {{-- <p class="mt-3 text-xs text-gray-400">
+                            Dikirim pada {{ \Carbon\Carbon::parse($feedback->send_at)->format('d M Y H:i') }}
+                        </p> --}}
+                        <hr class="border-t-3 border-[#18181B] mb-2 -px-10" />
+                        <p class="text-[18px] text-[#18181B] font-medium mb-2 flex items-center gap-4 px-6">
+                            <img src="/images/elements/Avatar.svg" alt="">
+                            <strong>{{ $feedback->sender_name }}</strong>
+                            {{-- <span class="text-xs text-gray-500">({{ $feedback->sender_email }})</span> --}}
+                        </p>
+                    </div>
+                @endforeach
+            </div>
+        @else
+            <p class="text-gray-600">Belum ada feedback masuk.</p>
+        @endif
+    </section>
+    {{-- End --}}
     @include('partials.faq', ['items' => $items])
     {{-- @include('partials.marquee') --}}
     @include('partials.yotube')

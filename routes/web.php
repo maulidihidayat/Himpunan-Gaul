@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Models\Kepengurusan;
 use App\Models\Pencapaian;
 use App\Models\Artikel;
@@ -118,6 +119,8 @@ Route::get('/kabinet', function () {
 
 Route::get('/beasiswa', [BeasiswaController::class, 'index'])->name('beasiswa.index');
 Route::get('/beasiswa/{slug}', [BeasiswaController::class, 'show'])->name('beasiswa.show');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::post('/registrasi', [RegistrasiController::class, 'store'])->name('registrasi.store');
 

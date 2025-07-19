@@ -28,12 +28,12 @@
                 </p>
             </div>
             <div>
-                <img src="/images/anggota/bendahara.JPG" alt="" class="object-contain w-[500px] h-[500px] "
-                    width="2000" height="2000">
+                <img src="/images/Visimisi.png" alt="" class="object-contain w-[500px] h-[500px] " width="2000"
+                    height="2000">
             </div>
         </div>
     </section>
-    <section class="container px-6 mx-auto mt-4 mb-20 space-y-16">
+    <section class="container px-10 mx-auto mt-4 mb-20 space-y-16">
         <h2 class="text-[40px] font-black text-[#18181B] mb-12 text-center">Implementasi <span class="text-orange-500">Visi
                 & Misi</span> </h2>
 

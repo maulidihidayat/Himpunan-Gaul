@@ -78,11 +78,23 @@
                 </div>
 
                 {{-- Events --}}
-                <a href="{{ route('Events.index') }}"
-                    class="nav-link px-2 py-1 border-b-2 transition duration-200
-                   {{ request()->is('events*') ? 'border-b-3 border-orange-600 font-medium text-orange-600' : 'border-transparent' }}">
-                    Events
-                </a>
+                <div x-data="{ open: false }" class="relative">
+                    <button @click="open = !open" @click.away="open = false"
+                        class="nav-link flex items-center px-2 py-1 border-b-2 transition duration-200 space-x-1
+                        {{ request()->is('news*') || request()->is('artikel*') || request()->is('pencapaian*') ? 'border-b-3 border-orange-600 text-orange-600' : 'border-transparent' }}">
+                        <span>Event</span>
+                        <svg class="w-4 h-4 transition-transform" :class="{ 'rotate-180': open }" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition
+                        class="absolute left-0 z-10 items-center w-56 mx-auto mt-2 text-left bg-white rounded-lg shadow-md top-full">
+                        <a href="{{ route('news.index') }}"
+                            class="block px-4 py-2 text-sm font-medium text-[#52525B] hover:text-orange-500">Safari Ramadhan</a>
+                        
+                    </div>
+                </div>
 
                 {{-- Feedback --}}
                 <a href="{{ route('feedback.store') }}"
