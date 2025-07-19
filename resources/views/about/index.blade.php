@@ -6,7 +6,7 @@
     <section id="about" class="container px-10 py-2 mx-auto mt-4">
         <h1 class="mb-10 text-[40px] font-black text-left text-[#18181B] ">Tentang Kami</h1>
         <div class="flex items-center justify-around">
-            <div class="max-w-2xl">
+            <div class="max-w-2xl text-justify">
                 <p class=" leading-relaxed text-[18px] text-[#52525B] font-medium">Halo, Nabil di sini. Sedikit cerita
                     tentang awal mula SOM
                     AI

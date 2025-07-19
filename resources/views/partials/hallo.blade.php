@@ -1,5 +1,5 @@
 <section id="hallo"
-    class="container flex flex-col items-center justify-between h-screen gap-10 px-10 py-20 pt-20 mx-auto md:flex-row">
+    class="container flex flex-col items-center justify-between h-screen gap-10 px-10 py-32 pb-40 mx-auto pt-30 md:flex-row">
     {{-- <span class="absolute right-0 p-20 mt-32 text-white rounded-full bg-orange-500/40 -z-40 blur-3xl"></span> --}}
     <span class="absolute left-0 p-20 text-white rounded-full bg-red-400/40 -z-40 blur-3xl mt-80"></span>
     <div class="max-w-xl">

@@ -17,4 +17,6 @@ class BeasiswaController extends Controller
         $beasiswa = Beasiswa::where('slug', $slug)->firstOrFail();
         return view('beasiswa.show', compact('beasiswa'));
     }
+
+    
 }
