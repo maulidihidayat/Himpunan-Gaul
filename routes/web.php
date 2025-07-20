@@ -91,9 +91,24 @@ Route::get('/registrasi', function () {
     return view('registrasi.index');
 });
 
-Route::get('/Events', function () {
+// Events routes
+// Events routes
+Route::get('/Events/index', function () {
     return view('Events.index');
 })->name('Events.index');
+
+Route::get('/Events/sport', function () {
+    return view('Events.sport');
+})->name('Events.sport');
+
+Route::get('/Events/voice', function () {
+    return view('Events.voice');
+})->name('Events.voice');
+
+Route::get('/Events/diesnatalis', function () {
+    return view('Events.diesnatalis');
+})->name('Events.diesnatalis');
+
 
 // Tentang Kami
 Route::get('/about', function () {
