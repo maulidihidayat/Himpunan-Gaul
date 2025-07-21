@@ -10,8 +10,8 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($pengurus as $person)
                     <div
-                        class="w-full flex items-center justify-between p-4 bg-white border-3 border-[#18181B] rounded-2xl hover:shadow-md hover:border-b-7 hover:-translate-y-1 transition-all duration-300">
-                        
+                        class="w-full flex items-center justify-between p-4 bg-white border-3 border-[#18181B] rounded-2xl hover:shadow-md hover:border-b-7 hover:-translate-y-1 hover:bg-orange-100 transition-all duration-300">
+
                         {{-- Kiri: Info --}}
                         <div class="flex-1 pr-4">
                             <h3 class="text-[20px] text-[#18181B] font-bold">{{ $person->name }}</h3>
@@ -19,9 +19,10 @@
                             <p class="text-[#A1A1AA] text-xs mt-1">Periode {{ $person->period }}</p>
 
                             @if ($person->instagram)
-                                <a href="https://instagram.com/{{ $person->instagram }}" class="flex items-center mt-4 space-x-2" target="_blank">
+                                <a href="https://instagram.com/{{ $person->instagram }}"
+                                    class="flex items-center mt-4 space-x-2" target="_blank">
                                     <i class="text-orange-600 fab fa-instagram"></i>
-                                    <p class="text-sm font-semibold text-orange-600 underline">@{{ $person->instagram }}</p>
+                                    <p class="text-sm font-semibold text-orange-600 underline">@{{ $person - > instagram }}</p>
                                 </a>
                             @endif
                         </div>
@@ -30,7 +31,7 @@
                         <div class="flex-shrink-0">
                             @if ($person->image)
                                 <img src="{{ asset('storage/' . $person->image) }}" alt="{{ $person->name }}"
-                                    class="w-[120px] h-[120px] object-cover rounded-xl border-2 border-[#E4E4E7] shadow-sm" loading="lazy" decoding="async">
+                                    class="w-[120px] h-[120px] object-cover rounded-xl" loading="lazy" decoding="async">
                             @else
                                 <div
                                     class="w-[120px] h-[120px] bg-gray-200 flex items-center justify-center text-sm text-gray-500 rounded-3xl">

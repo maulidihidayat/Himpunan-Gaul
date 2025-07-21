@@ -10,7 +10,7 @@
         </div>
         <div class="flex items-center justify-center gap-10 mt-4">
             <div class="bg-orange-100 p-10 rounded-3xl border-3 border-[#18181B] transition-all duration-300 hover:border-b-7 hover:cursor-pointer hover:bg-purple-100">
-                <a href="https://wa.me/6283899735326?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya....."
+                <a href="https://wa.me/6285857517122?text=Assalamu%27alaikum%2C%20perkenalkan%20nama%20saya....."
                     class="text-[28px] text-[#18181B] font-bold">
                     +6285857517122</a>
                 <p class="max-w-sm text-medium">Kami selalu siap membantu! Jika Anda memiliki pertanyaan atau membutuhkan
