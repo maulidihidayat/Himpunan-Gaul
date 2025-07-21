@@ -57,7 +57,7 @@
             <div class="mb-4">
                 <label class="block font-semibold text-[#18181B]">Semester</label>
                 <select name="semester"
-                    class="block text-[#52525B] w-full p-2 mt-1 text-lg font-semibold placeholder-opacity-50 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B] placeholder:opacity-30">
+                    class="block text-[#52525B] w-full p-3 mt-1 text-lg font-semibold placeholder-opacity-50 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B] placeholder:opacity-30">
                     <option value="">Pilih Semester</option>
                     @foreach (['2', '4', '6', '8'] as $smt)
                         <option value="{{ $smt }}" {{ old('semester') == $smt ? 'selected' : '' }}>
@@ -73,7 +73,7 @@
             <div class="mb-4">
                 <label class="block font-semibold text-[#18181B]">Kelas</label>
                 <select name="kelas"
-                    class="block text-[#52525B] w-full p-2 mt-1 text-lg font-semibold placeholder:opacity-30 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B] ">
+                    class="block text-[#52525B] w-full p-3 mt-1 text-lg font-semibold placeholder:opacity-30 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B] ">
                     <option value="" class="">Pilih Kelas</option>
                     @foreach (['A', 'B', 'C'] as $kelas)
                         <option value="{{ $kelas }}" {{ old('kelas') == $kelas ? 'selected' : '' }}

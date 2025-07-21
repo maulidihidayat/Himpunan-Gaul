@@ -19,6 +19,6 @@
 
     <div class="flex justify-center md:justify-end">
         <img src="/images/HMPS.png" alt="Hallo PI"
-            class="w-full max-w-xl transition duration-300 ease-in-out hover:scale-105">
+            class="w-full max-w-lg transition duration-300 ease-in-out hover:scale-105">
     </div>
 </section>
