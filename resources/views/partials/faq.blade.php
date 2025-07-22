@@ -1,4 +1,5 @@
 <div x-data="{ selected: null }" id="faq" class="px-10 pt-56 pb-20 mx-auto max-w-7xl">
+    <img src="/images/emote/Emoticon Vibes-2.svg" alt="emote" class="absolute z-10 mb-20 ml-56 -mt-10 h-15 w-15">
     <div class="flex flex-col items-center">
         {{-- <h2 class="mb-2 text-3xl font-bold text-center md:text-7xl text-[#18181B] ">
             FAQ
