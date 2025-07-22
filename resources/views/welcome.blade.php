@@ -116,6 +116,8 @@
         ];
     @endphp
     <section class="container px-10 py-10 mx-auto mt-96 md:-mt-2">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote" class="absolute z-10 w-12 h-12 mb-20 right-1/5">
+        <img src="/images/emote/tail.svg" alt="emote" class="absolute z-10 w-20 h-20 mb-2 ml-80">
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight <span class="text-orange-500">Pencapaian</span>
         </h2>
@@ -147,6 +149,9 @@
     </section>
     {{-- Pencapaian --}}
     <section class="container px-10 py-10 mx-auto">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
+            class="absolute z-10 w-12 h-12 mb-20 right-1/5 mt-96">
+        {{-- <img src="/images/emote/tail.svg" alt="emote" class="absolute z-10 w-20 h-20 mb-2 ml-80"> --}}
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight <span class="text-orange-500">Artikel</span>
         </h2>
@@ -180,6 +185,7 @@
 
     {{-- Beasiswa start --}}
     <section class="container px-10 py-10 mx-auto">
+
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight Info<span class="text-orange-500">Beasiswa</span>
         </h2>
@@ -212,6 +218,7 @@
 
     {{-- Saran & Komenter Start --}}
     <section class="container h-screen px-10 py-10 mx-auto mt-32">
+        <img src="/images/emote/Emoticon Vibes-2.svg" alt="emote" class="absolute z-10 mb-20 ml-20 -mt-10 h-15 w-15">
         <h2 class="mb-10 text-[40px] font-black text-[#18181B] text-center">
             Feedback dan pesan dari sahabat <span class="text-orange-500">Informatics!</span>
         </h2>
@@ -219,6 +226,8 @@
         @if ($recentFeedbacks->count())
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($recentFeedbacks as $feedback)
+                    <img src="/images/emote/star.svg" alt="emote"
+                        class="absolute right-0 z-10 w-12 h-12 mb-20 mt-96">
                     <div class="transition bg-red-50 border-3 border-[#18181B] rounded-3xl hover:shadow-md">
                         <p class="text-[18px] font-medium text-[#52525B] line-clamp-4 mb-8 p-6 ">
                             "{{ $feedback->message }}"

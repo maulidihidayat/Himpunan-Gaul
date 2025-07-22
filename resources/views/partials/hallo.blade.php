@@ -3,11 +3,13 @@
     {{-- <span class="absolute right-0 p-20 mt-32 text-white rounded-full bg-orange-500/40 -z-40 blur-3xl"></span> --}}
     <span class="absolute left-0 p-20 text-white rounded-full bg-red-400/40 -z-40 blur-3xl mt-80"></span>
     <div class="max-w-xl">
+        <img src="/images/emote/star.svg" alt="emote" class="absolute w-12 h-12 -mt-36">
         <h1 class="mb-4 text-[40px] font-bold leading-relaxed text-[#18181B] md:text-5xl">
             Halo Informatics <br /><span class="text-orange-500">Education!</span>
         </h1>
         <p class="mb-6 text-[18px] leading-relaxed text-[#52525B]">
-            Selamat datang di HMPS Pendidikan Informatika tempat di mana <span class="font-medium text-[#18181B]">inovasi
+            Selamat datang di HMPS Pendidikan Informatika tempat di mana <span
+                class="font-medium text-[#18181B]">inovasi
                 teknologi</span> dan <span class="font-medium text-[#52525B]">pendidikan</span> bersatu
             untuk membentuk generasi masa depan yang tangguh, kreatif, dan visioner.
         </p>
@@ -20,5 +22,6 @@
     <div class="flex justify-center md:justify-end">
         <img src="/images/HMPS.png" alt="Hallo PI"
             class="w-full max-w-lg transition duration-300 ease-in-out hover:scale-105">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote" class="right-0 z-10 w-12 h-12 mb-20 mt-96">
     </div>
 </section>
