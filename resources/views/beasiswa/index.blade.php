@@ -3,7 +3,7 @@
 @section('title', 'Daftar Beasiswa')
 
 @section('content')
-    <div class="container px-10 py-10 mx-auto mt-4">
+    <div class="container px-3 mx-auto mt-4 mb-20 py:-10 md:px-10">
         <h1 class="mb-4 text-[40px] font-black text-left text-[#18181B]">
             Daftar <span class="text-orange-500">Beasiswa</span>
         </h1>

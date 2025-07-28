@@ -5,11 +5,11 @@
 
 
 @section('content')
-    <div class="container px-10 py-10 mx-auto mt-4">
+    <div class="container px-3 mx-auto mt-4 py:-10 md:px-10">
         <h1 class="mb-4 text-[40px] font-black text-left text-[#18181B]">Artikel</h1>
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
             {{-- Kolom Kiri: Artikel Utama --}}
-            <div class="space-y-8 md:col-span-3">
+            <div class="space-y-8 lg:col-span-3">
                 @if ($artikels->count())
                     <div class="grid gap-4 md:grid-cols-2">
                         @foreach ($artikels as $artikel)
@@ -28,16 +28,7 @@
                                         <p class="text-bold text-[#52525B] mt-4 text-[16px]">
                                             <i aria-hidden="true" class="far fa-calendar"></i>
                                             {{ $artikel->publish_date->format('d M Y') }}
-                                            {{-- — oleh{{ $artikel->creator->name ?? 'Admin' }} --}}
                                         </p>
-                                        {{-- <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                                        {{ \Illuminate\Support\Str::limit(strip_tags($artikel->content), 100) }}
-                                    </p> --}}
-                                        {{-- <a href="{{ route('artikel.show', $artikel->slug) }}"
-                                        {{-- class="inline-block text-sm font-medium text-blue-600 transition hover:text-blue-800" --}}
-                                        {{-- >
-                                        Baca Selengkapnya →
-                                    </a> --}}
                                     </div>
                                 </a>
                             </div>
@@ -53,7 +44,7 @@
             </div>
 
             {{-- Kolom Kanan: Baca Juga --}}
-            <div class="md:col-span-1">
+            <div class="order-last mb-20 lg:order-none lg:col-span-1 ">
                 <div class="sticky p-4 bg-orange-50 rounded-3xl shadow top-24 border-3 border-[#18181B] text-[#18181B]">
                     <h3 class="mb-4 text-lg font-semibold text-gray-800">Baca Juga</h3>
                     <ul class="space-y-3">
@@ -73,4 +64,5 @@
             </div>
         </div>
     </div>
+
 @endsection

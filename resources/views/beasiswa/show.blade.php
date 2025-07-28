@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container max-w-3xl px-4 py-10 mx-auto">
-        <h1 class="mb-2 text-[40px] font-black text-center text-[#18181B]">
+        <h1 class="mb-2 text-[32px] md:text-[40px] font-black text-center text-[#18181B]">
             {{ $beasiswa->title }}
         </h1>
 

@@ -3,8 +3,8 @@
 @section('title', $item->title)
 
 @section('content')
-    <div class="container max-w-3xl px-4 py-6 mx-auto">
-        <h1 class="mb-2 text-3xl font-bold text-center">{{ $item->title }}</h1>
+    <div class="container max-w-3xl px-4 py-6 mx-auto mt-8">
+        <h1 class="mb-2 text-[26px] md:text-[40px] font-black text-center text-[#18181B]">{{ $item->title }}</h1>
         <p class="mb-4 text-[18px] font-medium text-center text-[#52525B]">
             <i aria-hidden="true" class="far fa-calendar"></i>
             {{ $item->publish_date->format('d M Y') }} - Admin
@@ -19,7 +19,7 @@
             class="mt-4 text-[#52525B] text-[18px] leading-relaxed text-justify font-medium mt-4 prose prose-slate max-w-none [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:ml-2 [&_li]:mb-2 [&_li]:text-[18px] [&_h1]:text-[24px] [&_h2]:text-[22px] [&_h3]:text-[20px]">
             {!! $item->content !!}
         </div>
-            <div class="flex mt-6 space-x-3">
+        <div class="flex mt-6 space-x-3">
             <!-- Facebook -->
             <a href="https://facebook.com/" target="_blank" aria-label="Facebook"
                 class="flex items-center justify-center w-10 h-10 text-white transition duration-300 rounded-full bg-[#F75801] hover:scale-110 hover:rotate-3">
