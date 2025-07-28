@@ -30,8 +30,8 @@
         </div>
 
         <!-- Logo -->
-        <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo" class="object-contain w-[300px] -mt-10"
-            width="1000" height="1000">
+        <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo"
+            class="object-contain max-w-[300px] h-auto -mt-10">
     </div>
 
 
@@ -143,7 +143,7 @@
 
         <div class="mt-6 text-right">
             <a href="{{ route('pencapaian.index') }}" class="font-medium text-orange-500 hover:underline">
-                Lihat semua artikel →
+                Selengkapnya →
             </a>
         </div>
     </section>
@@ -177,7 +177,7 @@
 
         <div class="mt-6 text-right">
             <a href="{{ route('artikel.index') }}" class="font-medium text-orange-500 hover:underline">
-                Lihat semua artikel →
+                Selengkapnya →
             </a>
         </div>
     </section>
@@ -211,7 +211,7 @@
 
         <div class="mt-6 text-right">
             <a href="{{ route('beasiswa.index') }}" class="font-medium text-orange-500 hover:underline">
-                Lihat semua beasiswa →
+                Selengkapnya →
             </a>
         </div>
     </section>
@@ -226,8 +226,7 @@
         @if ($recentFeedbacks->count())
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($recentFeedbacks as $feedback)
-                    <img src="/images/emote/star.svg" alt="emote"
-                        class="absolute right-0 z-10 w-12 h-12 mb-20 mt-96">
+                    <img src="/images/emote/star.svg" alt="emote" class="absolute right-0 z-10 w-12 h-12 mb-20 mt-96">
                     <div class="transition bg-red-50 border-3 border-[#18181B] rounded-3xl hover:shadow-md">
                         <p class="text-[18px] font-medium text-[#52525B] line-clamp-4 mb-8 p-6 ">
                             "{{ $feedback->message }}"
