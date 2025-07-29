@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container max-w-3xl px-4 py-10 mx-auto">
-        <h1 class="mb-2 text-[32px] md:text-[40px] font-black text-center text-[#18181B]">{{ $artikel->title }}</h1>
+        <h1 class="mb-2 text-[26px] md:text-[40px] font-black text-center text-[#18181B]">{{ $artikel->title }}</h1>
         <p class="mb-4 md:text-[18px]  font-medium text-[#52525B] text-center ">
             <i aria-hidden="true" class="far fa-calendar"></i>
             {{ $artikel->publish_date->format('d M Y') }}

@@ -3,7 +3,7 @@
 @section('title', 'Informatic Sport Day')
 
 @section('content')
-    <section class="max-w-7xl mx-auto text-[#18181B]">
+    <section class="max-w-7xl mx-auto text-[#18181B] p-4 md:px-10">
 
         {{-- HERO IMAGE --}}
         <div class="relative w-full h-[420px] md:h-[500px] overflow-hidden rounded-b-3xl shadow-lg mb-16">
@@ -37,8 +37,9 @@
         </div>
 
         {{-- CABANG OLAHRAGA --}}
-        <div class="px-6 mb-24 md:px-0">
-            <h2 class="mb-6 text-[40px] text-[#18181B] font-bold text-center">Cabang Olahraga yang Dipertandingkan</h2>
+        <div class="px-2 mb-24 md:px-0">
+            <h2 class="mb-6 text-[28px] md:text-[40px] text-[#18181B] font-bold text-center">Cabang Olahraga yang
+                Dipertandingkan</h2>
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach (['Futsal Putra & Putri', 'Badminton Ganda', 'Tenis Meja', 'Lari Estafet', 'E-Sport (Mobile Legends)', 'Catur & Game Strategi'] as $sport)
                     <div
@@ -53,7 +54,7 @@
 
         {{-- DOKUMENTASI --}}
         <div class="px-6 md:px-0">
-            <h2 class="mb-6 text-[40px] text-[18181B] font-bold text-center">Dokumentasi Kegiatan</h2>
+            <h2 class="mb-6 text-[28px] md:text-[40px] text-[18181B] font-bold text-center">Dokumentasi Kegiatan</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 @foreach (['sport1.jpg', 'sport2.jpg', 'sport3.jpg'] as $doc)
                     <div class="overflow-hidden transition duration-300 shadow rounded-2xl hover:scale-105">

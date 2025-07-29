@@ -3,7 +3,7 @@
 @section('title', 'Voice of Confidence')
 
 @section('content')
-    <section class="max-w-7xl mx-auto text-[#18181B]">
+    <section class="max-w-7xl mx-auto text-[#18181B] p-4 md:px-10">
 
         {{-- HERO IMAGE --}}
         <div class="relative w-full h-[420px] md:h-[500px] overflow-hidden rounded-b-3xl shadow-lg mb-16">
@@ -39,11 +39,11 @@
 
         {{-- MATERI KEGIATAN --}}
         <div class="px-6 mb-24 md:px-0">
-            <h2 class="mb-6 text-[40px] text-[#18181B] font-bold text-center">Materi & Kegiatan</h2>
+            <h2 class="mb-6 text-[28px] md:text-[40px] text-[#18181B] font-bold text-center">Materi & Kegiatan</h2>
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach (['Teknik membuka pidato dengan percaya diri', 'Mengatasi gugup dan demam panggung', 'Penggunaan intonasi dan gestur tubuh', 'Public speaking interaktif', 'Berbicara di depan kamera (digital speaking)', 'Simulasi presentasi kelompok'] as $topic)
                     <div
-                        class="bg-white border-3 border-[#18181B] p-6 rounded-3xl  hover:border-b-7 transition-all cursor-pointer hover:bg-purple-100 duration-300">
+                        class="bg-white border-3 border-[#18181B] p-6 rounded-3xl  hover:border-b-7 transition-all cursor-pointer hover:bg-orange-100 duration-300">
                         <p class="font-medium text-[#18181B] text-[16.5px] leading-relaxed">
                             • {{ $topic }}
                         </p>
@@ -53,8 +53,8 @@
         </div>
 
         {{-- DOKUMENTASI --}}
-        <div class="px-6 md:px-0">
-            <h2 class="mb-6 text-[40px] text-[#18181B] font-bold text-center">Dokumentasi Kegiatan</h2>
+        <div class="px-2 md:px-0">
+            <h2 class="mb-6 text-[28px] md:text-[40px] text-[#18181B] font-bold text-center">Dokumentasi Kegiatan</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 @foreach (['voice1.jpg', 'voice2.jpg', 'voice3.jpg'] as $doc)
                     <div class="overflow-hidden transition duration-300 shadow rounded-2xl hover:scale-105">

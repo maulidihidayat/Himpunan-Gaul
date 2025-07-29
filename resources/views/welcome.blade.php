@@ -3,38 +3,38 @@
 @section('title', 'Hmps Pendidikan Informatika')
 
 @section('content')
-    {{-- Main --}}
-    <div class="relative flex items-center justify-around min-h-screen mx-auto -mt-10">
-        <!-- Konten Teks dan Tombol -->
-        <div class="relative z-10 space-x-2 text-left">
-            <h1 class="text-6xl font-bold text-[#18181B] max-w-2xl">
+    <div
+        class="relative grid items-center min-h-screen grid-cols-1 gap-10 px-6 py-10 md:grid-cols-2 md:gap-20 md:px-32 lg:px-20">
+
+        <!-- Logo -->
+        <div class="flex justify-center order-1 md:justify-end md:order-2">
+            <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo" class="object-contain w-56 md:w-72 lg:w-[320px]"
+                width="1000" height="1000">
+        </div>
+
+        <!-- Teks -->
+        <div class="relative z-10 justify-center order-2 max-w-xl mx-auto text-center md:text-left md:order-1 md:px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18181B] leading-snug">
                 HMPS Pendidikan Informatika <span class="text-orange-500">Universitas Hamzanwadi</span>
             </h1>
 
-            <!-- GIF -->
+            <!-- GIF (hanya desktop) -->
             <img src="images/gif.gif" alt="gif" class="absolute left-0 z-0 -mt-40 pointer-events-none w-80 h-80">
 
-            <p class="mt-6 text-lg">Yuk cari tau lebih dalam tentang kami</p>
+            <p class="mt-6 text-base text-gray-700 md:text-lg">Yuk cari tau lebih dalam tentang kami</p>
 
             <!-- Tombol -->
-            <div class="mt-10 space-x-2">
+            <div class="flex flex-wrap justify-center gap-4 mt-8 md:justify-start">
                 <a href="{{ route('filament.admin.auth.login') }}"
-                    class="font-bold text-[16px] bg-[#F75801] text-white px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
+                    class="font-bold text-base md:text-lg bg-[#F75801] text-white px-6 py-3 rounded-xl border-2 border-b-4 border-[#18181B] shadow-md hover:bg-orange-600 transition">
                     Masuk
                 </a>
                 <a href="#hallo"
-                    class="font-bold text-[16px] bg-white text-[#18181B] px-6 py-3 rounded-xl border-[2px] border-b-[4px] border-[#18181B] transition">
+                    class="font-bold text-base md:text-lg bg-white text-[#18181B] px-6 py-3 rounded-xl border-2 border-b-4 border-[#18181B] shadow-md hover:bg-gray-100 transition">
                     Selengkapnya
                 </a>
             </div>
         </div>
-
-        <!-- Logo -->
-        <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo"
-            class="object-contain max-w-[300px] h-auto -mt-10">
-    </div>
-
-
     </div>
 
     {{-- Support --}}
@@ -115,9 +115,10 @@
             ],
         ];
     @endphp
-    <section class="container px-10 py-10 mx-auto mt-96 md:-mt-2">
-        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote" class="absolute z-10 w-12 h-12 mb-20 right-1/5">
-        <img src="/images/emote/tail.svg" alt="emote" class="absolute z-10 w-20 h-20 mb-2 ml-80">
+    <section class="container px-3 py-10 mx-auto mt-10 md:px-10 md:mt-20 md:-mt-2">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
+            class="absolute z-10 hidden w-12 h-12 mb-20 right-1/5">
+        <img src="/images/emote/tail.svg" alt="emote" class="absolute z-10 hidden w-20 h-20 mb-2 md:block ml-80">
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight <span class="text-orange-500">Pencapaian</span>
         </h2>
@@ -148,9 +149,9 @@
         </div>
     </section>
     {{-- Pencapaian --}}
-    <section class="container px-10 py-10 mx-auto">
+    <section class="container px-3 py-10 mx-auto md:px-10">
         <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
-            class="absolute z-10 w-12 h-12 mb-20 right-1/5 mt-96">
+            class="absolute z-10 hidden w-12 h-12 mb-20 right-1/5 mt-96 md:block">
         {{-- <img src="/images/emote/tail.svg" alt="emote" class="absolute z-10 w-20 h-20 mb-2 ml-80"> --}}
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight <span class="text-orange-500">Artikel</span>
@@ -184,7 +185,7 @@
 
 
     {{-- Beasiswa start --}}
-    <section class="container px-10 py-10 mx-auto">
+    <section class="container px-3 py-10 mx-auto md:px-10 ">
 
         <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
             Highlight Info<span class="text-orange-500">Beasiswa</span>
@@ -216,29 +217,33 @@
         </div>
     </section>
 
-    {{-- Saran & Komenter Start --}}
-    <section class="container h-screen px-10 py-10 mx-auto mt-32">
-        <img src="/images/emote/Emoticon Vibes-2.svg" alt="emote" class="absolute z-10 mb-20 ml-20 -mt-10 h-15 w-15">
-        <h2 class="mb-10 text-[40px] font-black text-[#18181B] text-center">
+    {{-- Saran & Komentar Start --}}
+    <section class="container relative px-3 py-10 mx-auto mt-20 mb-20 md:mt-32 md:px-10">
+        {{-- Emote Kiri Atas --}}
+        <img src="/images/emote/Emoticon Vibes-2.svg" alt="emote"
+            class="absolute top-0 z-10 hidden w-12 h-12 left-20 md:block md:w-20 md:h-20">
+
+        <h2 class="mb-10 text-[26px] md:text-[40px] font-black text-[#18181B] text-center">
             Feedback dan pesan dari sahabat <span class="text-orange-500">Informatics!</span>
         </h2>
 
         @if ($recentFeedbacks->count())
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($recentFeedbacks as $feedback)
-                    <img src="/images/emote/star.svg" alt="emote" class="absolute right-0 z-10 w-12 h-12 mb-20 mt-96">
+                    {{-- Emote Kanan Tengah --}}
+                    <img src="/images/emote/star.svg" alt="emote"
+                        class="absolute right-5 top-[500px] z-10 hidden md:block w-12 h-12">
+
                     <div class="transition bg-red-50 border-3 border-[#18181B] rounded-3xl hover:shadow-md">
-                        <p class="text-[18px] font-medium text-[#52525B] line-clamp-4 mb-8 p-6 ">
+                        <p class="text-[18px] font-medium text-[#52525B] line-clamp-4 mb-8 p-6">
                             "{{ $feedback->message }}"
                         </p>
-                        {{-- <p class="mt-3 text-xs text-gray-400">
-                            Dikirim pada {{ \Carbon\Carbon::parse($feedback->send_at)->format('d M Y H:i') }}
-                        </p> --}}
-                        <hr class="border-t-3 border-[#18181B] mb-2 -px-10" />
+
+                        <hr class="border-t-3 border-[#18181B] mb-2" />
+
                         <p class="text-[18px] text-[#18181B] font-medium mb-2 flex items-center gap-4 px-6">
-                            <img src="/images/elements/Avatar.svg" alt="">
+                            <img src="/images/elements/Avatar.svg" alt="" class="hidden md:block">
                             <strong>{{ $feedback->sender_name }}</strong>
-                            {{-- <span class="text-xs text-gray-500">({{ $feedback->sender_email }})</span> --}}
                         </p>
                     </div>
                 @endforeach
@@ -247,12 +252,14 @@
             <p class="text-gray-600">Belum ada feedback masuk.</p>
         @endif
     </section>
-    {{-- End --}}
+
+    {{-- Include FAQ --}}
     @include('partials.faq', ['items' => $items])
-    {{-- @include('partials.marquee') --}}
+
+    {{-- Include YouTube dan TikTok --}}
     @include('partials.yotube')
     @include('partials.tiktok')
 
-    {{-- Navbar --}}
+
 
 @endsection

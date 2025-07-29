@@ -1,4 +1,4 @@
-<nav id="navbar" class="sticky top-0 z-20 px-2 bg-white shadow-none md:px-16">
+<nav id="navbar" class="sticky top-0 z-20 px-2 bg-white shadow-none lg:px-16">
     <div class="container flex items-center justify-between px-4 py-3 mx-auto">
         {{-- Kiri: Logo --}}
         <a href="{{ url('/') }}" class="flex items-center space-x-4">
@@ -7,7 +7,7 @@
         </a>
 
         {{-- Menu Desktop --}}
-        <div class="hidden md:flex items-center space-x-8 font-medium text-[16px]">
+        <div class="hidden lg:flex items-center space-x-8 font-medium text-[16px]">
             <div class="flex space-x-6">
                 {{-- Beranda --}}
                 <a href="{{ url('/') }}"
@@ -128,7 +128,7 @@
         </div>
 
         {{-- Hamburger Menu --}}
-        <div class="md:hidden">
+        <div class="lg:hidden">
             <button id="menuToggle" class="text-2xl text-gray-700 focus:outline-none">☰</button>
         </div>
     </div>
@@ -148,7 +148,7 @@
             {{-- Dropdown Kepengurusan (Mobile) --}}
             <div x-data="{ open: false }" class="border-2 border-[#18181B] rounded-xl border-b-4">
                 <button @click="open = !open"
-                    class="w-full flex justify-between items-center p-3 font-medium text-[#18181B]">
+                    class="w-full flex justify-between items-center text-center p-3 font-medium text-[#18181B]">
                     Kepengurusan
                     <svg class="w-5 h-5 transform" :class="{ 'rotate-180': open }" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -171,7 +171,7 @@
             {{-- Dropdown Informasi (Mobile) --}}
             <div x-data="{ open: false }" class="border-2 border-[#18181B] rounded-xl border-b-4">
                 <button @click="open = !open"
-                    class="w-full flex justify-between items-center p-3 font-medium text-[#18181B]">
+                    class="w-full flex justify-between text-center items-center p-3 font-medium text-[#18181B]">
                     Informasi
                     <svg class="w-5 h-5 transform" :class="{ 'rotate-180': open }" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -189,7 +189,7 @@
             {{-- Dropdown Event (Mobile) --}}
             <div x-data="{ open: false }" class="border-2 border-[#18181B] rounded-xl border-b-4">
                 <button @click="open = !open"
-                    class="w-full flex justify-between items-center p-3 font-medium text-[#18181B]">
+                    class="w-full flex justify-between items-center text-center p-3 font-medium text-[#18181B]">
                     Event
                     <svg class="w-5 h-5 transform" :class="{ 'rotate-180': open }" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
