@@ -8,7 +8,7 @@
 
         {{-- Menu Desktop --}}
         <div class="hidden lg:flex items-center space-x-8 font-medium text-[16px]">
-            <div class="flex space-x-6">
+            <div class="flex space-x-4">
                 {{-- Beranda --}}
                 <a href="{{ url('/') }}"
                     class="nav-link px-2 py-1 border-b-2 transition duration-200

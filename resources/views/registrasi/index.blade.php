@@ -6,7 +6,7 @@
     <div class="container flex flex-col justify-start max-w-3xl p-4 px-4 mt-2 md:px-20 ">
         <h1 class="mb-10 text-[40px] font-black text-left text-[#18181B]">Rekrutmen Anggota</h1>
         @if (session('success'))
-            <div class="mb-4 text-green-600">
+            <div class="mb-4 text-green-700">
                 {{ session('success') }}
             </div>
         @endif

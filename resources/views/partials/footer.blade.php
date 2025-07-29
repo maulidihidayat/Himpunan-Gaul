@@ -54,7 +54,7 @@
                 <h3 class="mb-4 text-lg font-semibold text-[#18181B] dark:text-white">Lainnya</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="{{ route('filament.admin.auth.login') }}"
-                            class="text-orange-600 hover:underline dark:text-neutral-300">Login Admin</a></li>
+                            class="text-orange-600 hover:underline dark:text-neutral-300">Masuk</a></li>
                     <li><a href="#kontak" class="text-orange-600 hover:underline dark:text-neutral-300">Hubungi Kami</a>
                     </li>
                     <li><a href="#highlight" class="text-orange-600 hover:underline dark:text-neutral-300">Highlight</a>

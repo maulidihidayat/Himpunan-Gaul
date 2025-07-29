@@ -19,7 +19,6 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
-
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -29,18 +28,16 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->favicon(asset('images/logo/Mainlogo.png'))
+            ->brandLogo(asset('images/logo/Mainlogo.png'))
+            ->brandLogoHeight('2rem')
             ->colors([
                 'primary' => Color::Cyan,
             ])
             ->navigationGroups([
-                NavigationGroup::make()
-                    ->label('Manajemen'),
-
-                NavigationGroup::make()
-                    ->label('Konten'),
-
-                NavigationGroup::make()
-                    ->label('Lainnya')
+                NavigationGroup::make()->label('Manajemen'),
+                NavigationGroup::make()->label('Konten'),
+                NavigationGroup::make()->label('Lainnya'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -49,6 +46,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
+                \App\Filament\Widgets\ArtikelChart::class,
+                \App\Filament\Widgets\BeritaChart::class,
+                \App\Filament\Widgets\KepengurusanChart::class,
+                \App\Filament\Widgets\RegistrasiChart::class,
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
