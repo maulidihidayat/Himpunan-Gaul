@@ -3,7 +3,7 @@
 @section('title', 'Safari Ramadhan')
 
 @section('content')
-    <section class="max-w-7xl mx-auto text-[#18181B]">
+    <section class="max-w-7xl mx-auto text-[#18181B] p-4 md:px-10">
 
         {{-- HERO SECTION --}}
         <div class="relative w-full h-[420px] md:h-[500px] overflow-hidden rounded-b-3xl shadow-lg mb-16">
@@ -34,7 +34,7 @@
         </div>
 
         {{-- TUJUAN & GAMBAR --}}
-        <div class="grid items-center grid-cols-1 gap-10 px-6 mb-24 md:grid-cols-2 md:px-0">
+        <div class="grid items-center grid-cols-1 gap-10 px-2 mb-24 md:grid-cols-2 md:px-0">
             <div>
                 <h2 class="mb-4 text-2xl font-bold">Tujuan Kegiatan</h2>
                 <ul class="list-disc list-inside space-y-3 text-[#52525B] text-[17px]">
@@ -51,8 +51,8 @@
         </div>
 
         {{-- RANGKAIAN --}}
-        <div class="px-6 mb-24 md:px-0">
-            <h2 class="mb-6 text-[40px] font-bold text-center tetx-[#18181B]">Rangkaian Kegiatan</h2>
+        <div class="px-2 mb-24 md:px-0">
+            <h2 class="mb-6 text-[28px] md:text-[40px] font-bold text-center tetx-[#18181B]">Rangkaian Kegiatan</h2>
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach (['Pesantren Kilat untuk anak-anak dan remaja', 'Lomba Islami: Ceramah, Kaligrafi, Adzan', 'Pembagian Takjil dan Buka Puasa Bersama', 'Gotong Royong & Kebersihan Lingkungan', 'Kajian Tarawih Keliling & Ceramah Umum', 'Ngabuburit Edukatif & Permainan Islami'] as $item)
                     <div
@@ -67,7 +67,7 @@
 
         {{-- DOKUMENTASI --}}
         <div class="px-6 md:px-0">
-            <h2 class="mb-6 text-[40px] font-bold text-center text-[#18181B]">Dokumentasi</h2>
+            <h2 class="mb-6 text-[28px] md:text-[40px] font-bold text-center text-[#18181B]">Dokumentasi</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 @foreach (['safari1.jpg', 'safari2.jpg', 'safari3.jpg'] as $doc)
                     <div class="overflow-hidden transition duration-300 shadow rounded-2xl hover:scale-105">

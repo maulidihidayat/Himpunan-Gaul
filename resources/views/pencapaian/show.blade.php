@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="container max-w-3xl px-4 py-6 mx-auto">
-        <div class="p-6">
-            <h1 class="mb-2 text-[32px] md:text-[40px] font-black text-center text-[#18181B]">{{ $item->title }}</h1>
+        <div class="p-2 md:p-6">
+            <h1 class="mb-2 text-[26px] md:text-[40px] font-black text-center text-[#18181B]">{{ $item->title }}</h1>
             <p class="mb-4 text-[18px] text-center text-gray-500">
                 <i aria-hidden="true" class="far fa-calendar"></i>
                 {{ \Carbon\Carbon::parse($item->publish_date)->translatedFormat('d M Y') }} - Admin

@@ -3,7 +3,7 @@
 @section('title', 'Struktur Kepengurusan')
 
 @section('content')
-    <div class="container px-10 py-10 mx-auto">
+    <div class="container px-3 py-10 mx-auto md:px-10">
         <h1 class="mb-10 text-[40px] font-black text-left text-[#18181B]">Struktur Kepengurusan</h1>
 
         @if ($pengurus->count())

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Saran & Komentar')
 @section('content')
-    <div class="flex items-center justify-center min-h-screen p-3">
-        <div class="w-full max-w-2xl p-12 space-y-4">
-            <h1 class="mb-2 text-[40px] font-black text-center text-[#18181B]">Komentar & Saran</h1>
-            <p class="text-[#52525B] font-medium text-center text-[18px] leading-relaxed">
+    <div class="flex items-center justify-center min-h-screen p-3 mt-8 md:mt-2">
+        <div class="w-full max-w-2xl p-2 space-y-4 md:p-12">
+            <h1 class="mb-2 text-[32px] md:text-[40px] font-black text-center text-[#18181B]">Komentar & Saran</h1>
+            <p class="text-[#52525B] font-medium  text-center text-[18px] leading-relaxed">
                 Hallo informatics! 🙌Kami super excited buat dengerin kritik dan saran dari kalian semua!
                 Jangan ragu buat kasih tahu pendapat kalian tentang kami karena kami pengen bareng-bareng bikin semuanya
                 jadi lebih keren! 🚀🚀
@@ -20,8 +20,8 @@
 
                     <!-- Name Input -->
                     <div class="">
-                        <label htmlFor="name" class="block text-[18px] font-bold text-[#18181B] ">Nama Kamu:</label>
-                        <input type="text" name="sender_name" placeholder="Nama Anda" required
+                        <label htmlFor="name" class="block text-[18px] font-bold text-[#18181B] ">Nama :</label>
+                        <input type="text" name="sender_name" placeholder="Nama kamu" required
                             value="{{ old('sender_name') }}"
                             class="block w-full p-4 mt-1 text-lg font-semibold placeholder-opacity-50 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B]"
                             placeholder="Udin dindun" />
@@ -40,7 +40,7 @@
                     <div class="relative group">
                         <label htmlFor="message" class="block text-[18px] font-bold text-[#18181B] ">Pesan dan
                             Saran:</label>
-                        <textarea name="message" placeholder="Pesan Anda" required rows="4"
+                        <textarea name="message" placeholder="Pesan kamu   " required rows="4"
                             class="block w-full p-4 mt-1 text-lg font-semibold placeholder-opacity-50 border-2 shadow-sm rounded-xl border-[#18181B] placeholder-[#52525B]"
                             placeholder="Nama Kamu">{{ old('message') }}</textarea>
                     </div>

@@ -25,7 +25,7 @@
                                     <h2 class="text-[20px] font-bold text-[#18181B] mb-2">
                                         {{ $item->title }}
                                     </h2>
-                                    <p class="text-[#52525B] text-[15px] mb-3 leading-relaxed">
+                                    <p class="text-[#52525B] text-[15px] mb-3 leading-relaxed hidden lg:block">
                                         {{ \Illuminate\Support\Str::limit(strip_tags($item->description), 90) }}
                                     </p>
                                     <p class="hidden mb-3 text-sm text-gray-500 md:block">
@@ -58,10 +58,10 @@
                         @foreach ($pencapaianLainnya as $lain)
                             <li>
                                 <a href="{{ route('pencapaian.show', $lain->slug) }}"
-                                    class="text-[#18181B] font-semibold hover:underline">
+                                    class="text-[#18181B] font-semibold hover:underline line-clamp-1 md:line-clamp-2">
                                     {{ \Illuminate\Support\Str::limit($lain->title, 50) }}
                                 </a>
-                                <p class="text-gray-400 text-md ">
+                                <p class="font-medium text-gray-400 text-md ">
                                     {{ \Carbon\Carbon::parse($lain->publish_date)->translatedFormat('d M Y') }}
                                 </p>
                             </li>

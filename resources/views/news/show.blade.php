@@ -3,7 +3,7 @@
 @section('title', $item->title)
 
 @section('content')
-    <div class="container max-w-3xl px-4 py-6 mx-auto mt-8">
+    <div class="container max-w-3xl px-4 py-6 mx-auto mt-4 md:mt-8">
         <h1 class="mb-2 text-[26px] md:text-[40px] font-black text-center text-[#18181B]">{{ $item->title }}</h1>
         <p class="mb-4 text-[18px] font-medium text-center text-[#52525B]">
             <i aria-hidden="true" class="far fa-calendar"></i>

@@ -2,7 +2,7 @@
 @section('title', 'Kabinet Zeta')
 
 @section('content')
-    <section class="container px-10 mx-auto">
+    <section class="container mx-auto md:px-10">
         <section class="container px-6 py-20 mx-auto">
             <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
                 {{-- Gambar ilustrasi --}}
