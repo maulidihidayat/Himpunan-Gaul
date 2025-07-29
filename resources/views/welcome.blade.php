@@ -4,8 +4,9 @@
 
 @section('content')
     <div
-        class="relative grid items-center min-h-screen grid-cols-1 gap-10 px-6 py-10 md:grid-cols-2 md:gap-20 md:px-32 lg:px-20">
-
+        class="relative grid items-center min-h-screen grid-cols-1 gap-10 px-6 py-2 md:grid-cols-2 md:gap-20 md:px-32 lg:px-20">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
+            class="absolute hidden object-cover w-8 h-8 mt-96 md:w-12 md:h-12 right-4/12 md:block">
         <!-- Logo -->
         <div class="flex justify-center order-1 md:justify-end md:order-2">
             <img src="{{ asset('images/logo/Mainlogo.png') }}" alt="Logo" class="object-contain w-56 md:w-72 lg:w-[320px]"
@@ -35,6 +36,10 @@
                 </a>
             </div>
         </div>
+        <img src="/images/emote/star.svg" alt="emote"
+            class="absolute hidden object-cover w-8 h-8 -mt-96 right-3/12 md:w-12 md:h-12 md:block">
+        <img src="/images/emote/Emoticon Vibes-1.svg" alt="emote"
+            class="absolute hidden object-cover w-8 h-8 -mt-96 right-1/12 md:w-12 md:h-12 md:block">
     </div>
 
     {{-- Support --}}
@@ -115,6 +120,41 @@
             ],
         ];
     @endphp
+    <section class="container relative px-3 py-10 mx-auto mt-10 md:px-10 md:mt-20 md:-mt-2">
+        <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
+            class="absolute z-10 hidden w-12 h-12 right-[20%] top-0 md:block">
+        <img src="/images/emote/Clip path group.svg" alt="emote" class="absolute z-10 hidden w-20 h-20 top-10 left-[30%] md:block">
+
+        <h2 class="mb-6 text-3xl font-bold text-[#18181B]">
+            Highlight <span class="text-orange-500">Berita</span>
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            @foreach ($highlightNews as $News)
+                <a href="{{ route('news.show', $News->slug) }}"
+                    class="overflow-hidden transition-all duration-300 bg-white border-3 border-[#18181B] rounded-3xl hover:shadow-lg p-4 hover:bg-orange-50 max-w-md hover:shadow-md hover:border-b-4 hover:-translate-y-1">
+                    <img src="{{ asset('storage/' . $News->image) }}" alt="Thumbnail"
+                        class="object-cover w-full h-40 mb-2 rounded-xl" />
+
+                    <h3 class="text-lg font-bold text-[#18181B]">
+                        {{ $News->title }}
+                    </h3>
+
+                    <p class="mt-2 text-sm text-[#52525B]">
+                        <i class="mr-1 far fa-calendar"></i>
+                        {{ \Carbon\Carbon::parse($News->publish_date)->format('d M Y') }}
+                    </p>
+                </a>
+            @endforeach
+        </div>
+
+        <div class="mt-6 text-right">
+            <a href="{{ route('news.index') }}" class="font-medium text-orange-500 hover:underline">
+                Selengkapnya →
+            </a>
+        </div>
+    </section>
+
     <section class="container px-3 py-10 mx-auto mt-10 md:px-10 md:mt-20 md:-mt-2">
         <img src="/images/emote/Emoticon Vibes (2).svg" alt="emote"
             class="absolute z-10 hidden w-12 h-12 mb-20 right-1/5">

@@ -4,13 +4,16 @@ namespace App\Filament\Resources\FeedbackResource\Pages;
 
 use App\Filament\Resources\FeedbackResource;
 use Filament\Actions;
-use Filament\Resources\Pages\CreateRecord;
+use Filament\Resources\Pages\ListRecords;
 
-class CreateFeedback extends CreateRecord
+class ListFeedback extends ListRecords
 {
     protected static string $resource = FeedbackResource::class;
+
     protected function getHeaderActions(): array
     {
-        return [];
+        return [
+            Actions\CreateAction::make(),
+        ];
     }
 }
